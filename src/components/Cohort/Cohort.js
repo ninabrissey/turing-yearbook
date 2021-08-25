@@ -5,10 +5,10 @@ import './Cohort.css';
 // COHORT COMPONENT CODE GOES HERE
 const Cohort = ({ staff }) => {
   const personCards = staff.map((staffMember) => {
-    return <Person staffMember={staffMember} />;
+    return <Person key={staffMember.id} staffMember={staffMember} />;
   });
 
-  return <section>{personCards}</section>;
+  return <main>{personCards}</main>;
 };
 
 export default Cohort;
