@@ -2,8 +2,8 @@ import React from 'react';
 import './Person.css';
 
 // PERSON COMPONENT CODE GOES HERE
-const Person = ({ staffMember }) => {
-  const { id, name, quote, superlative, photo } = staffMember;
+const Person = ({ person }) => {
+  const { id, name, quote, superlative, photo } = person;
   return (
     <article>
       <img src={photo} alt={`Photo of ${name}`}></img>

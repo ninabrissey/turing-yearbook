@@ -8,6 +8,7 @@ class App extends Component {
     super();
     this.state = {
       staff: people.staff,
+      students: people.students,
     };
   }
 
@@ -18,7 +19,9 @@ class App extends Component {
           <h1>Turing Yearbook</h1>
         </header>
         <h2>Staff</h2>
-        <Cohort staff={this.state.staff} />
+        <Cohort people={this.state.staff} />
+        <h2>Students</h2>
+        <Cohort people={this.state.students} />
       </div>
     );
   }

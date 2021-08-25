@@ -3,9 +3,9 @@ import Person from '../Person/Person';
 import './Cohort.css';
 
 // COHORT COMPONENT CODE GOES HERE
-const Cohort = ({ staff }) => {
-  const personCards = staff.map((staffMember) => {
-    return <Person key={staffMember.id} staffMember={staffMember} />;
+const Cohort = ({ people }) => {
+  const personCards = people.map((person) => {
+    return <Person key={person.id} person={person} />;
   });
 
   return <main>{personCards}</main>;
