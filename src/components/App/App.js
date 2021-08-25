@@ -17,7 +17,8 @@ class App extends Component {
         <header className="App-header">
           <h1>Turing Yearbook</h1>
         </header>
-        <Cohort staff={this.people.staff} />
+        <h2>Staff</h2>
+        <Cohort staff={this.state.staff} />
       </div>
     );
   }
