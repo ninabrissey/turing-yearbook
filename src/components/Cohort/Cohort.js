@@ -8,7 +8,7 @@ const Cohort = ({ people }) => {
     return <Person key={person.id} person={person} />;
   });
 
-  return <main>{personCards}</main>;
+  return <main className="cohort-container">{personCards}</main>;
 };
 
 export default Cohort;

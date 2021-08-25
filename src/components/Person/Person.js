@@ -8,7 +8,7 @@ const Person = ({ person }) => {
     <article>
       <img src={photo} alt={`Photo of ${name}`}></img>
       <h3>{name}</h3>
-      <p>{quote}</p>
+      <p>{quote && `"${quote}"`}</p>
       <p>{superlative}</p>
     </article>
   );
